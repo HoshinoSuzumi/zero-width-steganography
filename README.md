@@ -1,12 +1,41 @@
-# @typescript-lib-template
+# @uniiem/zws
 
-![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/HoshinoSuzumi/[repo]/ci.yml)
-![NPM Downloads](https://img.shields.io/npm/dm/%40[org]%2F[repo])
-![NPM Version (with dist tag)](https://img.shields.io/npm/v/%40[org]%2F[repo]/latest)
-![npm bundle size](https://img.shields.io/bundlephobia/min/%40[org]%2F[repo])
-![GitHub License](https://img.shields.io/github/license/HoshinoSuzumi/[repo])
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/HoshinoSuzumi/zero-width-steganography/ci.yml)
+![NPM Downloads](https://img.shields.io/npm/dm/%40uniiem%2Fzws)
+![NPM Version (with dist tag)](https://img.shields.io/npm/v/%40uniiem%2Fzws/latest)
+![npm bundle size](https://img.shields.io/bundlephobia/min/%40uniiem%2Fzws)
+![GitHub License](https://img.shields.io/github/license/HoshinoSuzumi/zero-width-steganography)
 
-TypeScript Lib Starter Template
+A simple library for zero-width steganography.
+
+## Installation
+
+```bash
+npm install @uniiem/zws
+```
+
+## Usage
+
+```typescript
+import {
+  encodeText,
+  decodeText,
+  encodeBinary,
+  decodeBinary,
+  setCharSet
+} from '@uniiem/zws';
+```
+
+## API
+
+```typescript
+declare const setCharSet: (newChars: ZWSCharSet) => void;
+declare const encodeText: (text1: string, text2: string) => string;
+declare const encodeBinary: (text: string, data: Uint8Array) => string;
+declare const decodeText: (text: string) => ZWSDecoded<string>;
+declare const decodeBinary: (text: string) => ZWSDecoded<Uint8Array>;
+declare const ZW_CHARACTERS: readonly ZWSCharacter[];
+```
 
 ## Sponsor
 

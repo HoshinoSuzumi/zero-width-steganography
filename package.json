@@ -1,9 +1,17 @@
 {
-  "name": "@uniiem/typescript-lib-template",
+  "name": "@uniiem/zws",
   "type": "module",
   "version": "0.0.0",
-  "description": "TypeScript Library Template",
-  "keywords": [],
+  "description": "Zero Width Steganography implementation in TypeScript",
+  "keywords": [
+    "zero-width",
+    "zero-width-steganography",
+    "steganography"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HoshinoSuzumi/zero-width-steganography"
+  },
   "author": "HoshinoSuzumi <master@uniiem.com>",
   "license": "MIT",
   "main": "dist/index.umd.cjs",
