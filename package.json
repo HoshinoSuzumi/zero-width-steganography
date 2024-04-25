@@ -1,7 +1,7 @@
 {
   "name": "@uniiem/zws",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Zero Width Steganography implementation in TypeScript",
   "keywords": [
     "zero-width",
